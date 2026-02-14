@@ -1,0 +1,48 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: var(--color-bg-secondary);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background: var(--color-bg-surface);
+    border-color: var(--color-secondary);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-secondary);
+    display: inline-block;
+    padding: 1rem;
+    background: rgba(0, 229, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: var(--color-secondary);
+    color: var(--color-bg-primary);
+    transform: rotateY(180deg);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}

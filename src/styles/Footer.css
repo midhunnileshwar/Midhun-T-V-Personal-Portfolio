@@ -1,0 +1,31 @@
+.footer {
+    padding: 2rem 0;
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.copyright,
+.credit {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.heart {
+    color: var(--color-accent);
+}
+
+@media (max-width: 500px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
